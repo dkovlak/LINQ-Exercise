@@ -17,7 +17,7 @@
             videoGames.Add("Overwatch");
             videoGames.Add("Call of Duty: Warzone");
 
-            var length = videoGames.OrderBy(x => x.Length);
+            List<string> length = videoGames.OrderBy(x => x.Length).ToList();
 
             int count = 0;
             Console.WriteLine("~~~~~ List of Video Games ~~~~~");
